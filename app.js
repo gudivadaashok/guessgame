@@ -2,7 +2,7 @@ let secretNumber = 0,
  numberOfGuesses = 0,
     userGuessedNumber = 0;
 
-const writeMessage = (element, message, appendMessage) => {
+let writeMessage = (element, message, appendMessage) => {
     let elementToUpdate = document.getElementById(element);
     if(element && message){
         elementToUpdate.innerHTML = appendMessage ? elementToUpdate.innerHTML + message : message;
